@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul>
+    {% for t in answers[uid] %}
+        <li> {{answers[t]["question"]}}</li>
+        <li> {{answers[t]["answer"]}}</li>
+    {% endfor %}
+    </ul>
+
+    <h1>hey</h1>
+
+</body>
+</html>

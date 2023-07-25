@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <form method="post" action="/signUp">
+        <!-- email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="email" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+
+                <!-- name -->
+        <div>
+            <label>full name*</label>
+            <div class="input-group">
+                <input type="full_name"  name="full_name" required>
+            </div>
+        </div>
+
+                <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
+    <a href="/"><button>signin</button></a>
+    
+</body>
+</html>
