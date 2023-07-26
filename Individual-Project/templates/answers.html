@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
     <title></title>
 </head>
 <body>
     <ul>
-    {% for t in answers[uid] %}
+  <li><a href="/home">Home</a></li>
+  <li><a href="/answers">answers</a></li>
+  <li><a href="/logOut">sign Out</a></li>
+    </ul>
+
+    <ul>
+    {% for t in answers %}
         <li> {{answers[t]["question"]}}</li>
         <li> {{answers[t]["answer"]}}</li>
     {% endfor %}

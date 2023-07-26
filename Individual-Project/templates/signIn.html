@@ -2,33 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        body {
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("static/pictures/background.png"); /* Replace "path/to/your-image.jpg" with the image URL */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .my-div {
+                text-align: center;
+                margin-bottom: 20px; /* Optional: Add space between div and form */
+            }
+
+            h1{
+                font-size: 100px;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                text-align: left;
+                vertical-align: ;
+                font-weight: 800;
+                margin-left: 50px; 
+            }
+
+            h4{
+                font-size: 30px;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 500;
+                text-align: left;
+                margin-left: 50px; 
+            }
+
+            div {
+                margin-bottom: 15px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="email"],
+            input[type="password"] {
+                width: 30%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-left: 50px;
+            }
+
+            .input-group {
+                margin-bottom: 15px;
+            }
+
+            .input-group input {
+                width: 30%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+
+            }
+
+            input::placeholder {
+                color: #999; /* Set the color of the placeholder text */
+                font-size: 20px; /* Set the font size for the placeholder text */
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+                margin-top: 20px; /* Add spacing above the button container */
+                margin-left: 50px; 
+
+            }
+
+
+            .submit-btn {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 15px;
+                padding: 20px;
+                font-family: 'Open Sans', sans-serif;
+
+            }
+
+            input[type="submit"],
+            a {
+                background-color: #6545CD;
+                color: white;
+                padding: 20px;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 20px;
+                width: 15%;
+                border-radius: 10px;
+                text-align: center;
+                
+            }
+
+            .signup-btn {
+                background-color: #6545CD;
+                padding: 20px;
+                cursor: pointer;
+                text-decoration: none;
+                width: 15%;
+                border-radius: 10px;
+                margin-left: 10px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 20px;
+
+                
+
+            }
+
+            /* Optional: Hover effect for buttons */
+            .submit-btn:hover,
+            .signup-btn:hover {
+              background-color: white;
+              color: #6545CD;
+              border-color: white;
+          }
+
+          .img1 {
+            display: inline-block;
+            align-items: center; /* Vertically center the items */
+            vertical-align: middle;
+            margin-left: 50%;
+            margin-top: 1px;
+            float: right;
+        }
+
+
+
+    </style>
 </head>
 <body>
+
+   <div class="my-div">
+    <h1>PERSONAL </br>JOURNAL</h1>
+    <h4>Join your own digital journal, </br> and reflect on each day!</h4>
+</div>
+
+<div class="signinfields">
     <form method="post" action="/">
 
         <!-- Email -->
         <div>
-            <label>Email address*</label>
             <div>
-                <input type="email"  name="email" id="emailStr" required>
+                <input type="email" name="email" id="emailStr" required placeholder="email">
             </div>
         </div>
 
         <!-- Password -->
         <div>
-            <label>Password*</label>
             <div class="input-group">
-                <input type="password"  name="password" minlength="6">
+                <input type="password" name="password" minlength="6" placeholder="password">
             </div>
         </div>
-        
-        <!-- Button -->
-        <div>
-            <input type="submit"/>
+
+        <!-- Button Container -->
+        <div class="button-container">
+            <input type="submit" value="Sign In" class="submit-btn">
+            <a href="/signUp" class="signup-btn">Signup</a>
         </div>
     </form>
-    <br>
-    <a href="/signUp"><button>signup</button></a>
+</div>
+
+<img src="static/pictures/pic.png" alt="" width="600" height="600" class = "img1">
+
+
 </body>
 </html>

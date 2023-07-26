@@ -3,41 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+
+        body {
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("static/pictures/backg.png"); /* Replace "path/to/your-image.jpg" with the image URL */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .my-div {
+                text-align: center;
+                margin-bottom: 20px; /* Optional: Add space between div and form */
+            }
+
+            h1{
+
+            }
+
+            .my-div h1, .my-div h4 {
+
+            }
+
+            .signinfields {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                width: 15%; 
+                margin: 0 auto; 
+            }
+
+            div {
+                margin-bottom: 15px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+
+            .input-group {
+                margin-bottom: 15px;
+            }
+
+            .input-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .submit-btn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+            .signup-btn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 15px;
+
+            }
+
+/* Optional: Hover effect for buttons */
+.submit-btn:hover,
+.signup-btn:hover {
+    opacity: 0.8;
+}
+
+
+</style>
 </head>
 <body>
+ <div class="my-div">
+    <h1>personal journal</h1>
+    <h4>join your own digital journal, and reflect on each day!</h4>
+</div>
 
-    <form method="post" action="/signUp">
-        <!-- email -->
-        <div>
-            <label>Email address*</label>
+<div class="signinfields">
+    <center>
+        <form method="post" action="/signUp">
+            <!-- email -->
             <div>
-                <input type="email"  name="email" id="email" required>
+                <label>Email address*</label>
+                <div>
+                    <input type="email"  name="email" id="email" required>
+                </div>
             </div>
-        </div>
 
-        <!-- Password -->
-        <div>
-            <label>Password*</label>
-            <div class="input-group">
-                <input type="password"  name="password" minlength="6">
+            <!-- Password -->
+            <div>
+                <label>Password*</label>
+                <div class="input-group">
+                    <input type="password"  name="password" minlength="6">
+                </div>
             </div>
-        </div>
 
-                <!-- name -->
-        <div>
-            <label>full name*</label>
-            <div class="input-group">
-                <input type="full_name"  name="full_name" required>
+            <!-- name -->
+            <div>
+                <label>full name*</label>
+                <div class="input-group">
+                    <input type="full_name"  name="full_name" required>
+                </div>
             </div>
-        </div>
 
-                <!-- Button -->
-        <div>
-            <input type="submit"/>
-        </div>
-    </form>
+            <!-- Button -->
 
-    <a href="/"><button>signin</button></a>
-    
+            <!-- Button Container -->
+            <div class="button-container">
+                <input type="submit" value="Sign Up" class="submit-btn">
+                <a href="/" class = "signup-btn">Sign In</a>
+            </div>
+        </form>
+
+    </center>
+</div>
+
 </body>
 </html>
