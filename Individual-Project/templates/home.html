@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,800&display=swap" rel="stylesheet">
+    
     <style>
 
         body {
@@ -36,6 +37,16 @@
                 font-weight: 700;
                 font-size: 80px;
                 letter-spacing: -5px;
+                margin-left: 15%;
+                margin-right: 15%;
+                text-align: left;
+            }
+
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+                letter-spacing: -1px;
                 margin-top: 15%;
                 margin-left: 15%;
                 margin-right: 15%;
@@ -62,14 +73,17 @@
                 cursor: pointer;
                 text-decoration: none;
                 width: 15%;
-                border-radius: 10px;
+                border-radius: 20px;
                 margin-left: 10px;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 20px;
-                font-weight: 500;
+                font-weight:700;
                 color: white;
                 font-size: 18px;
-                margin-top: 10px;
+                outline: none;
+                margin-top: 20px;
+                box-shadow: none;
+                border-color: white;
             }
 
             /* Optional: Hover effect for buttons */
@@ -85,13 +99,13 @@
   </head>
   <body>
     <ul>
-      <li><a href="/home">Home</a></li>
-      <li><a href="/answers">answers</a></li>
-      <li><a href="/logOut">sign Out</a></li>
+      <li><a href="/home" class = "lin">Home</a></li>
+      <li><a href="/answers" class = "lin">answers</a></li>
+      <li><a href="/logOut" class = "lin">sign Out</a></li>
   </ul>
 
   <center>
-        <h2>{{full_name}}</h2>
+        <h2>Hey {{full_name}}, ready to answer your daily question...</h2>
       <h1>{{question}}</h1>
       <form method="post" action="/home">
         <!-- email -->
@@ -105,6 +119,12 @@
             <input type="submit" class="signup-btn"/>
         </div>
     </form>
+    <h1>   </h1>
+    </br>
+    </br>
+
+</center>
+</center>
 </center>
 
 </body>
